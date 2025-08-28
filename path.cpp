@@ -2,11 +2,11 @@
 #include <random>
 #include <cmath>
 int main() {
-    int a = -10;
-    int b = 10;
-    int nt = 4;
+    int a = -6;
+    int b = 6;
+    int nt = 6;
     long int ntraj = 500000000;
-    double m2 = 1.0;
+    double m2 = 0.25;
     double lambda = 0.0;
     std::mt19937 rng(rand());
     std::uniform_real_distribution<> uni(a,b);
