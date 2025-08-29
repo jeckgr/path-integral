@@ -29,7 +29,7 @@ int main() {
         }
         z += pow((b-a),nt)*exp(-S)/ntraj;
     }
-    for (int i = 0; i < nt; ++i) {
+    for (int i = 1; i < nt; ++i) {
         std::cout << acosh((c[(i+1)%nt]/z+c[(i-1+nt)%nt]/z)/(2*c[i]/z)) << '\n';
     }
 }
